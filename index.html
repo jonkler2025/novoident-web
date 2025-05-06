@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovoIdent</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovoIdent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e90ff;
+      --accent: #00e676;
+      --bg: #0a0f1f;
+      --text: #f5f5f5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: var(--primary);
+      animation: fadeInDown 1.5s ease;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+      max-width: 600px;
+      animation: fadeInUp 2s ease;
+    }
+
+    .pulse {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(var(--accent), transparent 70%);
+      animation: pulseAnim 3s infinite;
+      z-index: 0;
+    }
+
+    .pulse.one {
+      top: 10%;
+      left: 5%;
+    }
+
+    .pulse.two {
+      bottom: 10%;
+      right: 10%;
+    }
+
+    @keyframes fadeInDown {
+      0% { transform: translateY(-40px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      0% { transform: translateY(40px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes pulseAnim {
+      0% { transform: scale(0.9); opacity: 0.7; }
+      50% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(0.9); opacity: 0.7; }
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
 </head>
 <body>
-    <h1>NovoIdent</h1>
+  <div class="pulse one"></div>
+  <div class="pulse two"></div>
+  <div class="content">
+    <h1>Welcome to NovoIdent</h1>
+    <p>Revolutionizing identity verification with biometric encryption and zero-trust technology. This is not the future – this is now.</p>
+  </div>
 </body>
 </html>
