@@ -1,57 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanchenjunga:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #00c6ff, #0072ff);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    padding: 0;
+    height: 100%;
 }
 
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+#home {
+    width: 100vw;
+    height: 100vh;
+    background: #0095ff;
+    background: linear-gradient(301deg, rgba(0, 149, 255, 1) 17%, rgba(87, 199, 133, 1) 85%, rgba(134, 237, 83, 1) 100%);
 }
 
-h1 {
-    color: white;
+#home .main-title {
+    font-size: 6vw;
+    font-family: 'Kanchenjunga', Helvetica, Arial, sans-serif;
+    color: #6f4fff;
     text-align: center;
     margin-top: 20%;
-    font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    outline: #0095ff solid 2px;
 }
 
-.slogan {
-    color: white;
+#home .slogan {
+    font-size: 2vw;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    color: #6f4fff;
     text-align: center;
-    font-size: 1.5em;
-    margin-top: 20px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.button {
-    background-color: #0072ff;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    padding: 15px 30px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #005bb5;
+    margin-top: 5%;
+    outline: #0095ff solid 2px;
 }
