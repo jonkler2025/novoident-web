@@ -1,15 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovoIdent</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovoIdent – Identitätssicherung neu definiert</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="home">
-        <h1 class="main-title">NovoIdent</h1>
-        <p class="slogan">Identity Made Effortless</p>
+  <header>
+    <nav>
+      <div class="logo">NovoIdent</div>
+      <ul class="nav-links">
+        <li><a href="#services">Leistungen</a></li>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <h1>Willkommen bei NovoIdent</h1>
+    <p>Ihre vertrauenswürdige Lösung für digitale Identitätssicherung.</p>
+    <a href="#contact" class="cta-btn">Jetzt Kontakt aufnehmen</a>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Unsere Leistungen</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Identitätsprüfung</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="card">
+        <h3>Authentifizierungslösungen</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="card">
+        <h3>Compliance-Management</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
     </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>Über uns</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Kontakt</h2>
+    <form>
+      <input type="text" placeholder="Ihr Name" required>
+      <input type="email" placeholder="Ihre E-Mail" required>
+      <textarea placeholder="Ihre Nachricht" required></textarea>
+      <button type="submit">Absenden</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NovoIdent. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
