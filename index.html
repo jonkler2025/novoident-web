@@ -1,92 +1,170 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NovoIdent</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <title>FUCK CHAT CONTROL</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #003399; /* EU blue */
+      color: #FFD700; /* EU yellow */
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Background star container */
+    .stars {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      height: 400px;
+      margin: -200px 0 0 -200px;
+      border-radius: 50%;
+      animation: spin 30s linear infinite;
+      z-index: 0;
+    }
+
+    .stars span {
+      position: absolute;
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: #FFD700;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 
+                         68% 57%, 79% 91%, 50% 70%, 
+                         21% 91%, 32% 57%, 2% 35%, 
+                         39% 35%);
+      transform-origin: 200px 200px;
+    }
+
+    /* Position the 12 EU stars */
+    .stars span:nth-child(1) { transform: rotate(0deg) translateX(180px); }
+    .stars span:nth-child(2) { transform: rotate(30deg) translateX(180px); }
+    .stars span:nth-child(3) { transform: rotate(60deg) translateX(180px); }
+    .stars span:nth-child(4) { transform: rotate(90deg) translateX(180px); }
+    .stars span:nth-child(5) { transform: rotate(120deg) translateX(180px); }
+    .stars span:nth-child(6) { transform: rotate(150deg) translateX(180px); }
+    .stars span:nth-child(7) { transform: rotate(180deg) translateX(180px); }
+    .stars span:nth-child(8) { transform: rotate(210deg) translateX(180px); }
+    .stars span:nth-child(9) { transform: rotate(240deg) translateX(180px); }
+    .stars span:nth-child(10) { transform: rotate(270deg) translateX(180px); }
+    .stars span:nth-child(11) { transform: rotate(300deg) translateX(180px); }
+    .stars span:nth-child(12) { transform: rotate(330deg) translateX(180px); }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    header {
+      position: relative;
+      z-index: 1;
+      background: rgba(0, 32, 128, 0.85);
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 5px solid #FFD700;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    section {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(0, 26, 102, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-top: 0;
+      border-bottom: 2px solid #FFD700;
+      padding-bottom: 0.5rem;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: #FFD700;
+      color: #001a66;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    a.button:hover {
+      background: #ffeb66;
+    }
+
+    footer {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 32, 128, 0.85);
+      border-top: 5px solid #FFD700;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Animated EU stars background -->
+  <div class="stars">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
   <header>
-    <nav>
-      <div class="logo">NovoIdent</div>
-      <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>FUCK CHAT CONTROL</h1>
+    <p>Defend privacy. Defend freedom.</p>
   </header>
 
-  <section id="hero" class="hero">
-    <h1>Welcome to NovoIdent</h1>
-    <p>Your efficient partner in identification and security.</p>
-    <a href="#contact" class="cta-btn">Contact us</a>
+  <section>
+    <h2>What is Chat Control?</h2>
+    <p>
+      Chat Control is the EU’s plan to scan every private message, photo, and file.
+      It means mass surveillance of innocent people — treating every citizen like a suspect.
+    </p>
   </section>
 
-  <section id="services" class="services">
-    <h2>Our services</h2>
-    <div class="service-cards">
-      <div class="card">
-        <h3>Identification</h3>
-        <h3>& Security</h3>
-        <p>With expertise in the digital world, we promise to deliver secure systems for authentification and worldwide identification.</p>
-      </div>
-      <div class="card">
-        <h3>Data policy</h3>
-        <p>Our identification service never stores information in clear text - even employees are unable to get personal information.</p>
-      </div>
-      <div class="card">
-        <h3>Distinctivity</h3>
-        <p>Even with all of the world's computing power, a criminal will not manage to pass our reliable algorithms for encryption and distinction of identities.</p>
-      </div>
-    </div>
+  <section>
+    <h2>Why it’s Dangerous</h2>
+    <ul>
+      <li>Violates the right to privacy and free expression</li>
+      <li>Creates dangerous backdoors in encryption</li>
+      <li>Puts journalists, activists, and ordinary people at risk</li>
+      <li>Sets a precedent for authoritarian surveillance</li>
+    </ul>
   </section>
 
-  <section id="technology" class="technology">
-    <h2>Our Technology</h2>
-    <div class="tech-grid">
-      <div class="tech-card">
-        <h3>Biometric Hashing</h3>
-        <p>Combining secure text, fingerprint and document data in a secure, non-reversible hash.</p>
-      </div>
-      <div class="tech-card">
-        <h3>Zero-Knowledge Protocols</h3>
-        <p>Verify identities without transmitting actual data - Complete privacy, maximum integrity.</p>
-      </div>
-      <div class="tech-card">
-        <h3>Military-Grade Encryption</h3>
-        <p>We use asymmetric hybrid encryption chains secured against quantum threats.</p>
-      </div>
-    </div>
-  </section>
-  
-  <section id="vision" class="vision">
-    <h2>Our Vision</h2>
-    <p>We believe that identity is a right, not a risk. NovoIdent stands for a borderless future where trust transcends paperwork.</p>
-  </section>
-
-  <section id="about" class="about">
-    <h2>About</h2>
-    <p>NovoIdent is made of a small Austrian team with great knowledge in technical and geopolitical fields. Our CEO and main developer, <b>Leander Lombardi</b>,</p>
-    <p>with more than five years of professional development and corporate expertise, aims to maintain a well-managed, diverse and proficient board.</p>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" placeholder="Your name" required>
-      <input type="email" placeholder="Your email" required>
-      <textarea placeholder="Your message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
+  <section>
+    <h2>What You Can Do</h2>
+    <p>
+      Spread awareness. Contact your representatives. 
+      Support organizations fighting mass surveillance. 
+      Stand up for digital rights.
+    </p>
+    <a href="https://www.edri.org" class="button" target="_blank">Learn More</a>
   </section>
 
   <footer>
-    <p>&copy; 2025 NovoIdent</p>
+    <p>✦ Privacy is a human right ✦</p>
   </footer>
 
-  <script src="scripts.js"></script>
 </body>
 </html>
